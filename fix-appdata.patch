@@ -1,0 +1,39 @@
+From d394f37d0a0a3c30e4288c705a7b534a268be764 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Sun, 28 Dec 2025 18:13:04 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+---
+ com.varnamproject.Varnam.metainfo.xml | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+
+diff --git a/com.varnamproject.Varnam.metainfo.xml b/com.varnamproject.Varnam.metainfo.xml
+index fca1aa2..c118460 100644
+--- a/com.varnamproject.Varnam.metainfo.xml
++++ b/com.varnamproject.Varnam.metainfo.xml
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!-- Copyright 2020 Subin Siby <mail@subinsb.com> -->
+-<component type="desktop">
++<component type="desktop-application">
+     <id>com.varnamproject.Varnam</id>
+     <name>Varnam Editor</name>
+     <developer_name>Subin Siby</developer_name>
+@@ -13,8 +13,12 @@
+     <metadata_license>CC0-1.0</metadata_license>
+     <project_license>GPL-3.0</project_license>
+     <screenshots>
+-        <screenshot type="default">https://lab.subinsb.com/projects/blog/uploads/2019/07/varnam-editor-window.png</screenshot>
+-        <screenshot>https://lab.subinsb.com/projects/blog/uploads/2019/07/varnam-editor-settings.png</screenshot>
++        <screenshot type="default">
++            <image>https://lab.subinsb.com/projects/blog/uploads/2019/07/varnam-editor-window.png</image>
++        </screenshot>
++        <screenshot>
++            <image>https://lab.subinsb.com/projects/blog/uploads/2019/07/varnam-editor-settings.png</image>
++        </screenshot>
+     </screenshots>
+     <provides>
+         <binary>varnam</binary>
+--
+libgit2 1.7.2
+

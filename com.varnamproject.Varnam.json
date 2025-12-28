@@ -121,7 +121,7 @@
             },
             "build-commands": [
                 "install -d /app/share/com.varnamproject.Varnam/suggestions",
-                "tar -xf ml.full.tar.gz",
+                "tar -xf ml.tar.gz",
                 "varnamc -s ml --import-learnings-from .",
                 "rm $VARNAM_SUGGESTIONS_DIR/*.learnings-*",
                 "mv $VARNAM_SUGGESTIONS_DIR/* /app/share/com.varnamproject.Varnam/suggestions"
@@ -129,8 +129,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "http://mirror.rackdc.com/savannah/varnamproject/words/ml.full.tar.gz",
-                    "sha256": "b4d7208066a1395b033be5223ffbbc7759aabec6a7a2c60d9297cdd71c56dffd"
+                    "url": "https://cdimage.debian.org/mirror/gnu.org/savannah/varnamproject/words/ml/ml.tar.gz",
+                    "sha256": "b865db82ef56f780429cf0c44c7277b901dfbff69926b74106d38ab0c67d443c"
                 }
             ]
         },
@@ -156,6 +156,10 @@
                 {
                     "type": "file",
                     "path": "varnam-wrapper.sh"
+                },
+                {
+                    "type": "patch",
+                    "path": "fix-appdata.patch"
                 }
             ]
         }
