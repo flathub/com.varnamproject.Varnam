@@ -6,6 +6,7 @@
     "command": "varnam-wrapper",
     "finish-args": [
         "--share=network",
+        "--share=ipc",
         "--socket=x11",
         "--filesystem=~/.local/share/varnam"
     ],
