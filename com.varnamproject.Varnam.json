@@ -59,7 +59,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/subins2000/libvarnam.git",
-                    "branch": "cccafe2426d5b48a26f6853a551ec21eb149c693"
+                    "commit": "cccafe2426d5b48a26f6853a551ec21eb149c693"
                 }
             ]
         },
@@ -122,7 +122,7 @@
             },
             "build-commands": [
                 "install -d /app/share/com.varnamproject.Varnam/suggestions",
-                "tar -xf ml.tar.gz",
+                "tar -xf ml.full.tar.gz",
                 "varnamc -s ml --import-learnings-from .",
                 "rm $VARNAM_SUGGESTIONS_DIR/*.learnings-*",
                 "mv $VARNAM_SUGGESTIONS_DIR/* /app/share/com.varnamproject.Varnam/suggestions"
@@ -130,8 +130,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://cdimage.debian.org/mirror/gnu.org/savannah/varnamproject/words/ml/ml.tar.gz",
-                    "sha256": "b865db82ef56f780429cf0c44c7277b901dfbff69926b74106d38ab0c67d443c"
+                    "url": "http://download.savannah.nongnu.org/releases/varnamproject/words/ml.full.tar.gz",
+                    "sha256": "b4d7208066a1395b033be5223ffbbc7759aabec6a7a2c60d9297cdd71c56dffd"
                 }
             ]
         },
@@ -152,7 +152,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/subins2000/varnam.git",
-                    "branch": "ba29e70dee5c452b9c19fe98fc07e2b53359ab1d"
+                    "commit": "ba29e70dee5c452b9c19fe98fc07e2b53359ab1d"
                 },
                 {
                     "type": "file",
